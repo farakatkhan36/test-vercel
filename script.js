@@ -118,4 +118,3 @@ function showAdminPanel() {
 function markOrderPending(userNumber) {
     alert(`Order for user ${userNumber} marked as pending`);
 }
-
