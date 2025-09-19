@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jio Pay System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Registration Form -->
+<div id="registrationForm">
+    <h2>Register</h2>
+    <label for="regNumber">Number</label>
+    <input type="text" id="regNumber" placeholder="Enter number">
+    <label for="regPassword">Create Password</label>
+    <input type="password" id="regPassword" placeholder="Create password">
+    <button onclick="registerUser()">Register</button>
+</div>
+
+<!-- Login Form -->
+<div id="loginForm" style="display:none;">
+    <h2>Login</h2>
+    <label for="loginNumber">Number</label>
+    <input type="text" id="loginNumber" placeholder="Enter number">
+    <label for="loginPassword">Password</label>
+    <input type="password" id="loginPassword" placeholder="Enter password">
+    <button onclick="loginUser()">Login</button>
+</div>
+
+<!-- Orders and Payment -->
+<div id="ordersPage" style="display:none;">
+    <h2>Orders</h2>
+    <div id="ordersList"></div>
+    <button id="helpButton" onclick="openHelpLink()">Help</button>
+</div>
+
+<!-- Admin Panel -->
+<div id="adminPanel" style="display:none;">
+    <h2>Admin Panel</h2>
+    <label for="adminNumber">Admin Number</label>
+    <input type="text" id="adminNumber" placeholder="Enter number">
+    <label for="adminPassword">Admin Password</label>
+    <input type="password" id="adminPassword" placeholder="Enter password">
+    <button onclick="loginAdmin()">Admin Login</button>
+    <div id="adminData" style="display:none;">
+        <h3>Users' Orders</h3>
+        <div id="userOrders"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
